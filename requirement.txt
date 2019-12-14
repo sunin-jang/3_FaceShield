@@ -1,0 +1,7 @@
+flask==1.1.1
+werkzeug==0.16.0
+tensorflow==1.14.0
+face_recognition==1.2.3
+opencv-contrib-python==4.1.1.26
+argparse==1.1
+numpy==1.16.1

@@ -1,0 +1,110 @@
+* {
+    font-family: 'Jua', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    position: relative;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+
+header {
+    width: 100%;
+    height: 15%;
+    background-color: #4EABCB;
+}
+
+a {
+    text-decoration: none;
+}
+
+#logo {
+    position: relative;
+    float: left;
+    left: 5%;
+    top: 20%;
+}
+
+#logo img {
+    width: 30%;
+    height: 30%;
+}
+#menu {
+    position: absolute;
+    float: right;
+    top: 5%;
+    right: 5%;
+}
+
+#menu a {
+    color: white;
+}
+#menu a:hover {
+    color: #005698;
+}
+
+#mainmenu > li {
+    font-size: 1.8em;
+    display: inline-block;
+    list-style: none;
+    padding-left: 120px;
+}
+
+#mainmenu > li > ul {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    position: absolute;
+    top: 60%;
+}
+
+#mainmenu > li > ul > li {
+    display: none;
+    list-style: none;
+    font-size: 0.6em;
+}
+
+#mainmenu > li:hover > ul > li {
+    display: inline-block;
+    list-style: none;
+    font-size: 0.6em;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 85%;
+}
+
+#main {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+}
+
+#main img {
+    transform: translate(-50%, 0%);
+}
+
+#button {
+    position: relative;
+}
+#button img {
+    transform: translate(-50%, 0%);
+}
+
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    overflow: hidden;
+}

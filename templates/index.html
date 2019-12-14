@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Face Shield</title>
+    <link href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}" />
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.4.1.min.js') }}"></script>
+    <!-- <script src="{{ url_for('static', filename='js/slide.js') }}"></script> -->
+    <!-- <link rel="stylesheet" type="text/css" href="../static/css/main.css" /> -->
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="/"><img src="{{ url_for('static', filename='img/mainlogo.png') }}"></a>
+        </div>
+        <div id="menu">
+            <ul id="mainmenu">
+                <li><a href="/about">서비스소개</a></li>
+                <li><a href="/upload" target="_self">FACESHIELD</a>
+                    <ul>
+                        <li><a href="/upload" target="_self">BASIC&nbsp;&nbsp;&nbsp;</a></li>
+                        <li><a href="/upload_premium" target="_self">+ PREMIUM</a></li>
+                    </ul>
+                </li>
+                <li><a href="/board">커뮤니티</a></li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <video preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+            <source src="{{ url_for('static', filename='img/main_section.mp4') }}" type="video/mp4">
+            <source src="{{ url_for('static', filename='img/main_section.webm') }}" type="video/webm">
+        </video>
+        <!-- 영상 캡쳐 페이지 삽입 -->
+        <div id="main">
+            <div id="logo_section">
+                <img src="{{ url_for('static', filename='img/logo_edit.png') }}">
+            </div>
+            <br>
+            <div id="button">
+                <a href="/upload"><img src="{{ url_for('static', filename='img/start.png') }}"></a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

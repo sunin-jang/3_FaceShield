@@ -1,0 +1,215 @@
+* {
+    font-family: 'Jua', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+html, body {
+    position: relative;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 15%;
+    background-color: #4EABCB;
+}
+
+a {
+    text-decoration: none;
+}
+
+#logo {
+    position: relative;
+    float: left;
+    left: 5%;
+    top: 20%;
+}
+
+#logo img {
+    width: 30%;
+    height: 30%;
+}
+#menu {
+    position: absolute;
+    float: right;
+    top: 5%;
+    right: 5%;
+}
+
+#menu a {
+    color: white;
+}
+#menu a:hover {
+    color: #005698;
+}
+
+#mainmenu > li {
+    font-size: 1.8em;
+    display: inline-block;
+    list-style: none;
+    padding-left: 120px;
+}
+
+#mainmenu > li > ul {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    position: absolute;
+    top: 60%;
+}
+
+#mainmenu > li > ul > li {
+    display: none;
+    list-style: none;
+    font-size: 0.6em;
+}
+
+#mainmenu > li:hover > ul > li {
+    display: inline-block;
+    list-style: none;
+    font-size: 0.6em;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 85%;
+}
+
+.clear {
+    clear: both;
+}
+
+#upload {
+    position: relative;
+    left: 50%;
+    float: left;
+    height: 15%;
+    line-height: 70px;
+}
+
+.filebox {
+    padding-top: 20px;
+}
+
+.filebox form {
+    transform: translate(-50%, 0);
+}
+
+.filebox input[type="file"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip:rect(0,0,0,0);
+    border: 0;
+}
+.filebox label {
+    display: inline-block;
+    padding: .5em .75em;
+    color: #fff;
+    font-size: 1.2em;
+    line-height: normal;
+    vertical-align: middle;
+    background-color: #4eabcc;
+    cursor: pointer;
+    border: 1px solid #ebebeb;
+    border-bottom-color: #e2e2e2;
+    border-radius: .25em;
+    width: 80px;
+    text-align: center;
+}
+
+/* named upload */
+.filebox .upload-name {
+    display: inline-block;
+    padding: .5em .75em; /* label의 패딩값과 일치 */
+    font-size: 1.2em;
+    font-family: inherit;
+    line-height: normal;
+    vertical-align: middle;
+    background-color: #f5f5f5;
+    border: 1px solid #ebebeb;
+    border-bottom-color: #e2e2e2;
+    border-radius: .25em;
+    -webkit-appearance: none; /* 네이티브 외형 감추기 */
+    -moz-appearance: none;
+    appearance: none;
+    width: 320px;
+}
+
+.filebox input[type="submit"] {
+    display: inline-block;
+    padding: .5em .75em;
+    color: #fff;
+    font-size: 1.2em;
+    line-height: normal;
+    vertical-align: middle;
+    background-color: #4eabcc;
+    cursor: pointer;
+    border: 1px solid #ebebeb;
+    border-bottom-color: #e2e2e2;
+    border-radius: .25em;
+    width: 110px;
+    text-align: center;
+}
+
+#file {
+    float: left;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+
+.clear {
+    clear: both;
+}
+
+.video_wrap button[type="submit"] {
+    display: inline-block;
+    padding: .5em .75em;
+    color: #fff;
+    font-size: inherit;
+    line-height: normal;
+    vertical-align: middle;
+    background-color: #4eabcc;
+    cursor: pointer;
+    border-radius: .25em;
+}
+
+#video_area {
+    position: relative;
+    left: 50%;
+}
+
+#video_area video {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    transform: translate(-50%, 0);
+}
+
+#video_area button[type="submit"] {
+    display: inline-block;
+    padding: .5em 1.5em;
+    color: #fff;
+    font-size: inherit;
+    line-height: normal;
+    vertical-align: middle;
+    background-color: #4eabcc;
+    cursor: pointer;
+    border: 1px solid #ebebeb;
+    border-bottom-color: #e2e2e2;
+    border-radius: 1.5em;
+    font-size: 1.5em;
+    transform: translate(-50%, 0);
+}
